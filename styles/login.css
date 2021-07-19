@@ -1,0 +1,173 @@
+@import url('./common.css');
+
+
+main{
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.error{
+  position:absolute;
+  display: flex;
+  top: 80px;
+  left: auto;
+  height: 50px;
+  width: 250px;
+  background-color: #e23c47af;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 4px var(--firstblack);
+  color: #fff;
+}
+.error i {
+  height: 100%;
+  width: 20%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 50px;
+}
+.error div{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.error p{
+  font-size: 0.5em;
+}
+.mainsign{
+  display: flex;
+  height: 480px;
+  width: 250px;
+  background: var(--firstblack);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--firstblack);
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 30px 5px;
+}
+
+form label{
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-weight:300;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+form input{
+  margin-top: 8px;
+  width: 95%;
+  height: 15px;
+  padding: 5px 2.5% 1px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  border-bottom: #fff solid 1px;
+  color: #fff;
+  font-size: 1em;
+}
+button{
+  background: none;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  border-bottom: solid white 2px;
+}
+form input:focus{
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.login a{
+  color: #fff;
+  font-size: 0.6em;
+  text-decoration: none;
+}
+.loginbrother{
+  display: none;
+  width: 50%;
+  height: 100%;
+}
+
+.loginbrother img{
+  padding: 0;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form-footer{
+  position: absolute;
+  bottom: 10px;
+  width: 80px;
+  justify-self: flex-end;
+}
+
+.registerLogin{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.registerLogin button:hover{
+  cursor: pointer;
+}
+.disable {
+  opacity: 0.3;
+}
+
+.submitbtn{
+  margin: 10px 0;
+}
+.nodisplay{
+  display: none;
+}
+
+@media (orientation:landscape) and (min-width:600px) {
+  .mainsign{
+    width: 300px;
+  }
+}
+
+@media (orientation:portrait) and (min-width:760px) {
+  .mainsign{
+    height: 500px;
+    width: 350px;
+  }
+  .error{
+    top: 180px;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1000px) {
+  .mainsign{
+    height: 500px;
+    width: 600px;
+  }
+  .error{
+    top: 90px;
+  }
+  .login{
+    width: 50%;
+  }
+  .loginbrother{
+    display: block;
+  }
+}
